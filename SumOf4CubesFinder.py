@@ -93,6 +93,31 @@ def find(n):
 	
 	return bruteforce(n, 1)
 
+from math import ceil
+def CountEachGroup(m=18,l=10):
+	
+	d=dict()
+	for x in range(m):
+		d[x]=0
+
+	for i in range(-l,l+1):
+		for j in range(-l,i+1):
+			for k in range(-l,j+1):
+				for w in range(-l,k+1):
+					p=[i,j,k,w]
+					N=sum([x**3 for x in p])
+					X=N%m
+					print("  ",p,N,f"\033[90m{m}x+\033[0m{X}")
+					d[X]=d[X]+1
+
+	mx= ceil(m/2) +1
+	if m%2: mx = mx-1
+	for x in range(mx):
+		if x and x!= ceil(m/2):
+			print(f"   \033[90mCount of \033[33m{x} & {m-x}\033[90m is \033[31m{d[x]+d[m-x]}")
+		else:
+			print(f"   \033[90mCount of \033[33m{x}\033[90m is \033[31m{d[x]}")
+	print(f"   total sum is \033[31m{sum(d.values())}\033[0m")
 
 from time import time
 st=time()
