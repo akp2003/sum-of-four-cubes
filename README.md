@@ -16,3 +16,21 @@ For more info, check out this page:
 https://en.m.wikipedia.org/wiki/Sum_of_four_cubes_problem
 
 Have fun! :)
+
+# How to build
+
+```
+rocq makefile -f _CoqProject -o CoqMakefile
+make -f CoqMakefile
+```
+
+# How to clean up the mess
+
+```
+make -f CoqMakefile cleanall
+```
+
+# AI use
+
+I used Gemini 4 Argon and Claude Sonnet 5.5 to write and simplify the proof of some of the cases. These AI models are very
+good at writing formal proofs, and I really like it!

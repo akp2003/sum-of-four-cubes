@@ -1,0 +1,16 @@
+CoqMakefile
+CoqMakefile.conf
+*.vo
+*.vos
+*.vok
+*.glob
+*.aux
+.CoqMakefile.d
+.lia.cache
+.nra.cache
+.nia.cache
+.vscode
+.continue
+.csdp.cache
+AGENTS.md
+opencode.json
