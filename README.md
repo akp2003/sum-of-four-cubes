@@ -30,7 +30,16 @@ make -f CoqMakefile
 make -f CoqMakefile cleanall
 ```
 
+# A cool number!
+
+Let's define a cool number. For every $k$, let $A(k)$
+denote the minimum number $s$ of kth powers of integers needed to represent all integers.
+
+We are basically trying to find out whether A(3)<=4 is true.
+
 # AI use
 
 I used Gemini 4 Argon and Claude Sonnet 5.5 to write and simplify the proof of some of the cases. These AI models are very
 good at writing formal proofs, and I really like it!
+
+
